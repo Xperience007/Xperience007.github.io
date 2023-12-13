@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tyler Searle | Home</title>
+        <link href="https://fonts.google.com/specimen/Roboto+Mono" rel="stylesheet">
         <style>
             img {
                 width: 300px;
@@ -12,24 +13,74 @@
             .name {
                 font-weight: bold;
             }
+            body {
+                font-family: 'Roboto Mono', monospace;
+                background-color: #ffa43f;
+            }
+            h1 {
+                text-align: center;
+            }
+            .img1 {
+                width: 18px;
+                float: left;
+                margin-right: 10px;
+                mix-blend-mode: multiply;
+            }
+            .img2 {
+                width: 20px;
+                float: left;
+                margin-right: 10px;
+            }
+            .img3 {
+                width: 23px;
+                float: left;
+                margin-right: 10px;
+            }
+            .img4 {
+                width: 22px;
+                float: left;
+                margin-right: 10px;
+                mix-blend-mode: multiply;
+            }
+            .img5 {
+                width: 30px;
+                float: left;
+                margin-right: 10px;
+                mix-blend-mode: multiply;
+            }
+            .contact {
+                float: right;
+
+            }
+            .about {
+                float: left;
+            }
         </style>
     </head>
     <body>
-        <h1>The Portfolio of Tyler Searle</h1>
-        <img src="images/unknown.png" alt="An image of Tyler Searle">
-        <p class="name">Tyler Searle</p>
-        <p>-------------------</p>
-        <h2>ABOUT</h2>
-        <p>Tyler Searle</p>
-        <a href="documents/Resume.pdf" download>Resume</a>
-        <p>-------------------</p>
-        <h2>CONTACT</h2>
-        <p>My Email: 
-        <a href="mailto:tylersearle450@gmail.com">tylersearle450@gmail.com</a>
-        </p>
-        <p></p>
-        <a href="https://github.com/Xperience007" target="_blank">Github</a>
-        <p></p>
-        <a href="https://github.com/ULGameLab/cmps-327-fall-2023-project-6-Xperience007" target="_blank">My Latest Project</a>
+        <h1>Tyler Searle</h1>
+        <div style="text-align: center;">
+            <img src="images/unknown.png" alt="An image of Tyler Searle">
+        </div>
+        <div class="about">
+            <p>-------------------</p>
+            <h2>ABOUT</h2>
+            <img class="img1" src="images/icon1.jpg" alt="">
+            <p>Tyler Searle</p>
+            <img class="img2" src="images/icon5.png" alt="">
+            <a href="documents/Resume.pdf" download>Resume</a>
+        </div>
+        <div class="contact">
+            <p>-------------------</p>
+            <h2>CONTACT</h2> 
+            <img class="img3" src="images/icon2.png" alt="">
+            <a href="mailto:tylersearle450@gmail.com">tylersearle450@gmail.com</a>
+            <p></p>
+            <img class="img4" src="images/icon3.png" alt="">
+            <a href="https://github.com/Xperience007" target="_blank">Github</a>
+            <p></p>
+            <img class="img5" src="images/icon4.jpg" alt="">
+            <a href="https://github.com/ULGameLab/cmps-327-fall-2023-project-6-Xperience007" target="_blank">My Latest Project</a>
+        </div>
     </body>
 </html>
