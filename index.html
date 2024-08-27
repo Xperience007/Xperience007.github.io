@@ -5,87 +5,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tyler Searle | Home</title>
         <link href="https://fonts.google.com/specimen/Roboto+Mono" rel="stylesheet">
-        <style>
-            img {
-                width: 300px;
-                border-radius: 10px;
-            }
-            .name {
-                font-weight: bold;
-            }
-            body {
-                font-family: 'Roboto Mono', monospace;
-                background-color: #ffa43f;
-            }
-            h1 {
-                text-align: center;
-            }
-            .img1 {
-                width: 18px;
-                float: left;
-                margin-right: 10px;
-                mix-blend-mode: multiply;
-            }
-            .img2 {
-                width: 20px;
-                float: left;
-                margin-right: 10px;
-            }
-            .img3 {
-                width: 23px;
-                float: left;
-                margin-right: 10px;
-            }
-            .img4 {
-                width: 22px;
-                float: left;
-                margin-right: 10px;
-                mix-blend-mode: multiply;
-            }
-            .img5 {
-                width: 30px;
-                float: left;
-                margin-right: 10px;
-                mix-blend-mode: multiply;
-            }
-            .contact {
-                float: right;
-                font-size: x-large;
-                margin-right: 500px;
-
-            }
-            .about {
-                float: left;
-                width: 400px;
-                font-size: x-large;
-                margin-left: 650px;
-            }
-        </style>
+        <link href="general.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Tyler Searle</h1>
-        <div style="text-align: center;">
-            <img src="images/IMG_0741.JPG" alt="An image of Tyler Searle">
-        </div>
-        <div class="about">
-            <p>-------------------</p>
-            <h2>ABOUT</h2>
-            <img class="img1" src="images/icon1.jpg" alt="">
-            <p>Tyler Searle</p>
-            <img class="img2" src="images/icon5.png" alt="">
-            <a href="documents/Resume.pdf" download>Resume</a>
-        </div>
-        <div class="contact">
-            <p>-------------------</p>
-            <h2>CONTACT</h2> 
-            <img class="img3" src="images/icon2.png" alt="">
-            <a href="mailto:tylersearle450@gmail.com">tylersearle450@gmail.com</a>
-            <p></p>
-            <img class="img4" src="images/icon3.png" alt="">
-            <a href="https://github.com/Xperience007" target="_blank">Github</a>
-            <p></p>
-            <img class="img5" src="images/icon4.jpg" alt="">
-            <a href="https://github.com/ULGameLab/spring-2024-pac-man-3d-team-02" target="_blank">My Latest Project</a>
-        </div>
+        <main>
+            <h1>Tyler Searle</h1>
+            <div class="main-picture">
+                <img class="picture" src="images/IMG_0741.JPG" alt="An image of Tyler Searle">
+            </div>
+            <section class="information">
+                <div class="about">
+                    <div class="about-info">
+                        <h2>ABOUT</h2>
+                        <div class="name">
+                            <img class="img1" src="images/icon1.jpg" alt="">
+                            <p>Tyler Searle</p>
+                        </div>
+                        <div class="resume">
+                            <img class="img2" src="images/icon5.png" alt="">
+                            <a href="documents/Resume.pdf" download>Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact-info">
+                        <h2>CONTACT</h2>
+                        <div class="email">
+                            <img class="img3" src="images/icon2.png" alt="">
+                            <a href="mailto:tylersearle450@gmail.com">tylersearle450@gmail.com</a>
+                        </div>
+                        <div class="github">
+                            <img class="img4" src="images/icon3.png" alt="">
+                            <a href="https://github.com/Xperience007" target="_blank">Github</a>
+                        </div>
+                        <div class="latest-project">
+                            <img class="img5" src="images/icon4.jpg" alt="">
+                            <a href="https://github.com/ULGameLab/spring-2024-pac-man-3d-team-02" target="_blank">My Latest Project</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

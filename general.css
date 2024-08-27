@@ -1,0 +1,65 @@
+.main-picture {
+    display: flex;
+    justify-content: center;
+}
+.picture {
+    width: 300px;
+    border-radius: 10px;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #ffa43f;
+}
+h1, h2 {
+    text-align: center;
+}
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.information img {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.about {
+    justify-self: end;
+    font-size: x-large;
+    width: 300px;
+}
+.about h2 {
+    padding-right: 100px;
+}
+.img1 {
+    width: 18px;
+    float: left;
+    mix-blend-mode: multiply;
+}
+.img2 {
+    width: 20px;
+    float: left;
+}
+.contact {
+    justify-self: start;
+    font-size: x-large;
+    width: 350px;
+}
+.contact h2 {
+    padding-right: 20px;
+}
+.contact-info div {
+    margin-bottom: 20px;
+}
+.img3 {
+    width: 23px;
+    float: left;
+}
+.img4 {
+    width: 22px;
+    float: left;
+    mix-blend-mode: multiply;
+}
+.img5 {
+    width: 25px;
+    float: left;
+    mix-blend-mode: multiply;
+}
