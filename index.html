@@ -32,7 +32,7 @@
                         <h2>CONTACT</h2>
                         <div class="email">
                             <img class="img3" src="images/icon2.png" alt="">
-                            <a href="mailto:tylersearle450@gmail.com">tylersearle450@gmail.com</a>
+                            <a href="mailto:tylersearle450@gmail.com">Email</a>
                         </div>
                         <div class="github">
                             <img class="img4" src="images/icon3.png" alt="">
@@ -45,6 +45,72 @@
                     </div>
                 </div>
             </section>
+            <section class="my-latest-project">
+                <h2>My Latest Project: Panophobia</h2>
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img class="project-image" src="images/pano11.PNG">
+                    </div>
+                    <div class="mySlides">
+                        <img class="project-image" src="images/pano6.PNG">
+                    </div>
+                    <div class="mySlides">
+                        <img class="project-image" src="images/pano7.PNG">
+                    </div>
+                    <div class="mySlides">
+                        <img class="project-image" src="images/pano8.PNG">
+                    </div>
+                    <div class="mySlides">
+                        <img class="project-image" src="images/pano9.PNG">
+                    </div>
+                    <div class="mySlides">
+                        <img class="project-image" src="images/pano10.PNG">
+                    </div>
+                    <div class="mySlides">
+                        <img class="project-image" src="images/pano3.PNG">
+                    </div>
+                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+            </section>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                }
+            </script>
         </main>
     </body>
 </html>
