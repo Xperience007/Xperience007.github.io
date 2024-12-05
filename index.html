@@ -40,75 +40,141 @@
                         </div>
                         <div class="latest-project">
                             <img class="img5" src="images/icon4.jpg" alt="">
-                            <a href="https://github.com/Xperience007/Panophobia" target="_blank">My Latest Project</a>
+                            <a href="https://github.com/Xperience007/Barred-From-Freedom" target="_blank">My Latest Project</a>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="my-latest-project">
-                <h2>My Latest Project: Panophobia</h2>
+                <h2>My Latest Project: Barred From Freedom</h2>
                 <div class="slideshow-container">
-                    <div class="mySlides">
-                        <img class="project-image" src="images/pano11.PNG">
+                    <div class="myLatestSlides">
+                        <img class="project-image" src="images/barred1.png">
                     </div>
-                    <div class="mySlides">
-                        <img class="project-image" src="images/pano6.PNG">
+                    <div class="myLatestSlides">
+                        <img class="project-image" src="images/barred2.png">
                     </div>
-                    <div class="mySlides">
-                        <img class="project-image" src="images/pano7.PNG">
+                    <div class="myLatestSlides">
+                        <img class="project-image" src="images/barred3.png">
                     </div>
-                    <div class="mySlides">
-                        <img class="project-image" src="images/pano8.PNG">
+                    <div class="myLatestSlides">
+                        <img class="project-image" src="images/barred4.png">
                     </div>
-                    <div class="mySlides">
-                        <img class="project-image" src="images/pano9.PNG">
+                    <div class="myLatestSlides">
+                        <img class="project-image" src="images/barred5.png">
                     </div>
-                    <div class="mySlides">
-                        <img class="project-image" src="images/pano10.PNG">
+                    <div class="myLatestSlides">
+                        <img class="project-image" src="images/barred6.png">
                     </div>
-                    <div class="mySlides">
-                        <img class="project-image" src="images/pano3.PNG">
+                    <div class="myLatestSlides">
+                        <img class="project-image" src="images/barred7.png">
                     </div>
                     <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 <br>
                 <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="latestdot" onclick="currentSlide(1)"></span>
+                    <span class="latestdot" onclick="currentSlide(2)"></span>
+                    <span class="latestdot" onclick="currentSlide(3)"></span>
+                    <span class="latestdot" onclick="currentSlide(4)"></span>
+                    <span class="latestdot" onclick="currentSlide(5)"></span>
+                    <span class="latestdot" onclick="currentSlide(6)"></span>
+                    <span class="latestdot" onclick="currentSlide(7)"></span>
                 </div>
             </section>
             <script>
-                let slideIndex = 1;
-                showSlides(slideIndex);
+                let slideIndex1 = 1;
+                showSlides(slideIndex1);
 
                 function plusSlides(n) {
-                showSlides(slideIndex += n);
+                showSlides(slideIndex1 += n);
                 }
 
                 function currentSlide(n) {
-                showSlides(slideIndex = n);
+                showSlides(slideIndex1 = n);
                 }
 
                 function showSlides(n) {
                 let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
+                let slides = document.getElementsByClassName("myLatestSlides");
+                let dots = document.getElementsByClassName("latestdot");
+                if (n > slides.length) {slideIndex1 = 1}
+                if (n < 1) {slideIndex1 = slides.length}
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
                 for (i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
+                slides[slideIndex1-1].style.display = "block";
+                dots[slideIndex1-1].className += " active";
+                }
+            </script>
+            <section class="other-projects"></section>
+                <h2>Other Projects</h2>
+                <div class="slideshow-container">
+                    <div class="myOtherSlides">
+                        <img class="project-image" src="images/pano11.PNG">
+                    </div>
+                    <div class="myOtherSlides">
+                        <img class="project-image" src="images/pano6.PNG">
+                    </div>
+                    <div class="myOtherSlides">
+                        <img class="project-image" src="images/pano7.PNG">
+                    </div>
+                    <div class="myOtherSlides">
+                        <img class="project-image" src="images/pano8.PNG">
+                    </div>
+                    <div class="myOtherSlides">
+                        <img class="project-image" src="images/pano9.PNG">
+                    </div>
+                    <div class="myOtherSlides">
+                        <img class="project-image" src="images/pano10.PNG">
+                    </div>
+                    <div class="myOtherSlides">
+                        <img class="project-image" src="images/pano3.PNG">
+                    </div>
+                    <a class="previous" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="otherdot" onclick="currentSlide2(1)"></span>
+                    <span class="otherdot" onclick="currentSlide2(2)"></span>
+                    <span class="otherdot" onclick="currentSlide2(3)"></span>
+                    <span class="otherdot" onclick="currentSlide2(4)"></span>
+                    <span class="otherdot" onclick="currentSlide2(5)"></span>
+                    <span class="otherdot" onclick="currentSlide2(6)"></span>
+                    <span class="otherdot" onclick="currentSlide2(7)"></span>
+                </div>
+            </section>
+            <script>
+                let slideIndex2 = 1;
+                showSlides2(slideIndex2);
+
+                function plusSlides2(n) {
+                showSlides2(slideIndex2 += n);
+                }
+
+                function currentSlide2(n) {
+                showSlides2(slideIndex2 = n);
+                }
+
+                function showSlides2(n) {
+                let i;
+                let slides = document.getElementsByClassName("myOtherSlides");
+                let dots = document.getElementsByClassName("otherdot");
+                if (n > slides.length) {slideIndex2 = 1}
+                if (n < 1) {slideIndex2 = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex2-1].style.display = "block";
+                dots[slideIndex2-1].className += " active";
                 }
             </script>
         </main>
