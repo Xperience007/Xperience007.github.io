@@ -13,6 +13,21 @@ body {
 h1, h2 {
     text-align: center;
 }
+.header {
+    display: flex;
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+    text-decoration: solid;
+    position: relative;
+    margin-bottom: 50px;
+}
+.pages {
+    text-align: right;
+    justify-content: right;
+    font-size: large;
+    flex: 1;
+}
 .information {
     display: grid;
     grid-template-columns: 1fr 1fr;
