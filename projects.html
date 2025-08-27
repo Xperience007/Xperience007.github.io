@@ -11,8 +11,8 @@
         <div class="header">
             <b style="flex: 2; position: absolute;">Projects</b>
             <div class="pages">
-                <a href="index.html" style="padding-right: 20px;">Home</a>
-                <a href="projects.html" style="padding-right: 20px;">Projects</a>
+                <a href="index.html" style="padding-right: 20px; font-size: x-large;">Home</a>
+                <a href="projects.html" style="padding-right: 20px; font-size: x-large;">Projects</a>
             </div>
         </div>
         <section class="my-latest-project">
@@ -81,6 +81,14 @@
             dots[slideIndex1-1].className += " active";
             }
         </script>
+        <div class="other-projects-images" style="margin-bottom: 100px;">
+            <p style="text-align: center; width: 500px;">
+                This is a video game that was made for my senior project. It's a rougelike type game where you get items after you beat a wave of enemies and 
+                enventually you fight a final boss. I wanted to make a rougelike game since that's one of my favorite genres and I was definitely inspired by 
+                the Risk of Rain series. The game was made in the Unity Engine and all of the core scripts were created using C#. I also used Blender to 
+                create both the player and enemy models. This game was completed and delivered within one semester.
+            </p>
+        </div>
         <section class="other-projects">
             <h2>Other Projects</h2>
             <div class="other-projects-container">
@@ -92,6 +100,19 @@
                 <p style="text-align: center; width: 500px;">
                     A project I built starting out in Power BI where I took a dataset full of jewelry (Cartier Catalog) and wrote a SQL query to give me the top 
                     10 most expensive jewelry and see what gems were most common in those jewelry. Dataset: https://www.kaggle.com/datasets/marcelopesse/cartier-jewelry-catalog
+                </p>
+            </div>
+            <div class="other-projects-container">
+                <b style="flex: 1; text-align: center; margin-bottom: 10px;">Pokémon Image Classifier Project</b>
+            </div>
+            <div class="other-projects-images">
+                <img class="pokeml2" src="images/pokeml2.png">
+                <img class="pokeml3" src="images/Psyduck.png">
+                <img class="pokeml1" src="images/pokeml1.PNG">
+                <p style="text-align: center; width: 500px;">
+                    This is an image classifier that was made to classify the original 151 Pokémon. I created a Convolutional Neural Network 
+                    to train on a dataset of images and my model has an accuracy of 93%. Python and PyTorch were used in this project. Even though this machine learning model was trained 
+                    on a specific dataset, it can recognize Pokémon from drawings as seen by the example with Psyduck. Dataset: https://www.kaggle.com/datasets/echometerhhwl/pokemon-gen-1-38914
                 </p>
             </div>
         </section>
